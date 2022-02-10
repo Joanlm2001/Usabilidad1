@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/indiceStyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estructura Proyecto</title>
+    <style>
+      .precioTachado{
+        text-decoration:line-through;
+}
+    </style>
+  </head>
+  <body>
+  
+    <div>
+      <img class="anuncio" src="Imagenes/anuncio.webp" alt="Imagen descuento" />
+    </div>
+
+    <header>
+      <div class="contenedorHeader">
+        <div class="gridHeader">
+          <!-- Grid -->
+
+          <div style="margin: auto">
+            <!-- CSS inline -->
+            <p>
+              Welcome to our online store! Join Free or
+              <a href="#" class="enlaceHeader">Sign in</a>
+            </p>
+          </div>
+          <div style="margin: auto">
+            <!-- Grid -->
+            <select name="idioma" id="idioma">
+              <option value="España">ESP</option>
+              <option value="USA">USA</option>
+              <option value="Alemania">ALE</option>
+            </select>
+            <select name="moneda" id="moneda">
+              <option value="euro">EU(€)</option>
+              <option value="dolar">USD($)</option>
+              <option value="rublo">RUB(₽)</option>
+            </select>
+          </div>
+        </div>
+        <!-- Fin Grid -->
+      </div>
+
+      <div class="gridTitulo">
+        <!-- Grid -->
+        <div>
+          <img class="logoMarca" src="Imagenes/Logo/logo2.png" alt="ekommart" />
+        </div>
+        <div>
+          <form action="#">
+            <div class="busqueda">
+              <img
+                class="icono"
+                src="Imagenes/user/iconoBusqueda.png"
+                alt="busqueda"
+              />
+              <input
+                class="placeholder"
+                type="search"
+                placeholder="Search among 100,000 products"
+              />
+              <button class="botonBusqueda" type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="gridIconos">
+          <div>
+            <button class="icono">
+              <img class="iconoMain" src="Imagenes/user/user.png" alt="usuario" />
+            </button>
+          </div>
+          <div>
+            <button class="icono">
+              <img class="iconoMain" src="Imagenes/user/favoritos.png" alt="favoritos" />
+            </button>
+          </div>
+          <div>
+            <button class="icono">
+              <img class="iconoMain" src="Imagenes/user/compra.png" alt="compra" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Grid -->
+
+      <nav>
+        <div class="gridNavegacion">
+          <div class="navegacion">
+            <a class="negrita" href="/2ºDAW/DIW/Estructura Proyecto/index.html"
+              >Pagina principal</a
+            >
+          </div>
+          <div class="navegacion">
+            <a class="negrita" href="Enlaces/galImg.html"
+              >Galeria de imagenes</a
+            >
+          </div>
+          <div class="navegacion">
+            <a class="negrita" href="Enlaces/contacto.html">Contacto</a>
+          </div>
+          <div class="navegacion">
+            <a class="negrita" href="Enlaces/mapaWeb.html">Mapa de la web</a>
+          </div>
+          <div class="navegacion">
+            <a class="negrita" href="Enlaces/listNot.html"
+              >Listado de noticias&frasl;articulos</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <article class="imagenFondo imagenFondo--Scandinavia">
+        <section class="section-Scandonavia">
+          <form class="flexScandinavia" action="#">
+            <p class="titulo-Limited">Limited Edition</p>
+            <h1 class="titulo-Scandinavia">
+              SCANDINAVIA <br />
+              COLLECTIONS FOR YOUR <br />
+              BEDROOM JUST $499
+            </h1>
+            <button class="boton-Scandinavia" type="submit">Shop Now</button>
+          </form>
+        </section>
+      </article>
+      <div class="contenedor">
+        <div class="gridMain">
+          <div>
+            <div class="flex">
+              <img
+                class="iconoMain"
+                src="Imagenes/user/cohete.png"
+                alt="Cohete"
+              />
+              <div>
+                <p class="negrita">FREE DELIVERY</p>
+                <p>For all orders overs $100</p>
+              </div>
+            </div>
+          </div>
+          <!-- Icono 1 -->
+
+          <div>
+            <div class="flex">
+              <img
+                class="iconoMain"
+                src="Imagenes/user/reloj.png"
+                alt="Reloj"
+              />
+              <div>
+                <p class="negrita">90 DAYS RETURN</p>
+                <p>If goods have problems</p>
+              </div>
+            </div>
+          </div>
+          <!-- Icono 2 -->
+          <div>
+            <div class="flex">
+              <img
+                class="iconoMain"
+                src="Imagenes/user/tarjeta.png"
+                alt="Tarjeta"
+              />
+              <div>
+                <p class="negrita">SECURE PAYMENT</p>
+                <p>100% secure payment</p>
+              </div>
+            </div>
+          </div>
+          <!-- Icono 3 -->
+
+          <div>
+            <div class="flex">
+              <img
+                class="iconoMain"
+                src="Imagenes/user/bocadillo.png"
+                alt="Bocadillo"
+              />
+              <div>
+                <p class="negrita">24/7 SUPPORT</p>
+                <p>Dedicated support</p>
+              </div>
+            </div>
+          </div>
+          <!-- Icono 4 -->
+        </div>
+
+        <article>
+          <div class="gridElite">
+            <div class="imagenFondo imagenFondo--Elite">
+              <div class="items-Elite">
+                <p class="subtitulo">Sofa Furniture</p>
+                <p class="titulo-Elite">
+                  New Elite <br />
+                  Collections
+                </p>
+                <p class="subtitulo">SALE UP TO 40% OFF</p>
+                <input
+                  id="submit"
+                  type="submit"
+                  value="VIEW COLLECTION"
+                  class="boton-Elite"
+                />
+              </div>
+            </div>
+            <div class="imagenFondo imagenFondo--Almohada">
+              <div class="items-Almohada">
+                <p class="titulo negrita">
+                  PACK 5 PILLOWS FOR <br />
+                  YOUR DREAM
+                </p>
+                <p class="amarillo subtitulo negrita">Starting at $99.99</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <h1 class="titulo negrita centrado">Best Sellers</h1>
+          <div style="text-align: center">
+            <!-- Este es el div principal -->
+            <div class="grid4">
+              <!-- Este es el div que coge los Best Sellers -->
+              <div class="imgBestSellers">
+                <!-- Producto 1 -->
+                <a href="#">
+                  <img class="imagenBestSellers" src="Imagenes/BestSellers/silla1.webp" alt="sillon" />
+                  <div>
+                    <!-- Aqui va la informacion del producto -->
+                    <img
+                      class="valoracion"
+                      src="Imagenes/Valoracion/val3.webp"
+                      alt="Valoracion"
+                    />
+                    <p class="gris">Running</p>
+                    <p>Fleece Badge Of Sport Graphic Hoodie</p>
+                    <p class="amarillo">$40.00</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Fin del producto 1-->
+
+              <div class="imgBestSellers">
+                <!-- Producto 2 -->
+                <a href="#">
+                  <img class="imagenBestSellers" src="Imagenes/BestSellers/silla2.webp" alt="silla" />
+                  <div>
+                    <!-- Aqui va la informacion del producto -->
+                    <img
+                      class="valoracion"
+                      src="Imagenes/Valoracion/val3.webp"
+                      alt="Valoracion"
+                    />
+                    <p class="gris">Outwear</p>
+                    <p>Men's Rugged WorkwearGraphic Hoodie</p>
+                    <p class="amarillo">$59.99</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Fin del producto 2-->
+
+              <div class="imgBestSellers">
+                <!-- Producto 3 -->
+                <a href="#">
+                  <img class="imagenBestSellers" src="Imagenes/BestSellers/sofa1.webp" alt="sofa" />
+                  <div>
+                    <!-- Aqui va la informacion del producto -->
+                    <img
+                      class="valoracion"
+                      src="Imagenes/Valoracion/val3.webp"
+                      alt="Valoracion"
+                    />
+                    <p class="gris">Sweatshirt</p>
+                    <p>Men's Rain Defender Rockland Sherpa-Lined</p>
+                    <div class="precio-Best">
+                      <p class="amarillo">$40.00</p>
+                      <p class="precioTachado ">$350.99</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Fin del producto 3-->
+
+              <div class="imgBestSellers">
+                <!-- Producto 4 -->
+                <a href="#">
+                  <img class="imagenBestSellers" src="Imagenes/BestSellers/almohada1.webp" alt="cojin" />
+                  <div>
+                    <!-- Aqui va la informacion del producto -->
+                    <img
+                      class="valoracion"
+                      src="Imagenes/Valoracion/val3.webp"
+                      alt="Valoracion"
+                    />
+                    <p class="gris">Running</p>
+                    <p>Men's Sportwear 2019 Hooded Windrunner Jacket</p>
+                    <p class="amarillo">$40.00</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Fin del producto 4-->
+            </div>
+            <!-- Aqui acaba el div de las cuatro primeras imagenes -->
+          </div>
+          <!-- Articulo 1 -->
+        </article>
+
+        <article>
+          <div>
+            <!-- Categorias -->
+            <div class="grid6">
+              <!-- Este es el grid -->
+              <!-- Imagen hacia abajo -->
+              <div class="imagenFondo imagenFondo--Cat">
+                <div class="explore">
+                  <p>Made with real wood</p>
+                  <p class="titulo">
+                    Living in <br />
+                    style
+                  </p>
+                  <p>Sale up to 40% off</p>
+                  <a href="#">Explore now</a>
+                </div>
+              </div>
+              <div class="divCategoria">
+                <!-- Clase 1 -->
+                <a href="#">
+                  <img
+                    src="Imagenes/Categorias/sofaCat.webp"
+                    alt="Sofas"
+                  />
+                  <p>Sofas</p>
+                </a>
+              </div>
+
+              <div class="divCategoria">
+                <!-- Clase 2 -->
+                <a href="#">
+                  <div class="prueba-hover">
+                    <p>702 Products</p>
+                </div> 
+                  <img
+                    src="Imagenes/Categorias/sillaCat.webp"
+                    alt="Sillas"
+                  />
+                  <p>Chairs</p>
+                </a>
+              </div>
+
+              <div class="divCategoria">
+                <!-- Clase 3 -->
+                <a href="#">
+                  <img
+                    src="Imagenes/Categorias/mesaCat.webp"
+                    alt="Mesas"
+                  />
+                  <p>Tables</p>
+                </a>
+              </div>
+              <div class="divCategoria">
+                <!-- Clase 4 -->
+                <a href="#">
+                  <img
+                    src="Imagenes/Categorias/teleCat.webp"
+                    alt="Mesas de television"
+                  />
+                  <p>TV Boards</p>
+                </a>
+              </div>
+              <div class="divCategoria">
+                <!-- Clase 5 -->
+                <a href="#">
+                  <img
+                    src="Imagenes/Categorias/lampCat.webp"
+                    alt="Lamparas"
+                  />
+                  <p>Lamps & Lightning</p>
+                </a>
+              </div>
+
+              <div class="divCategoria">
+                <!-- Clase 6 -->
+                <a href="#">
+                  <img
+                    src="Imagenes/Categorias/almohadasCat.webp"
+                    alt="Muebles"
+                  />
+                  <p>Furnishings</p>
+                </a>
+              </div>
+
+              <div class="divCategoria">
+                <!-- Clase 7 -->
+                <a href="#">
+                  <img
+                    src="Imagenes/Categorias/cajoneraCat.webp"
+                    alt="Cajoneras"
+                  />
+                  <p>Ottomans</p>
+                </a>
+              </div>
+
+              <div class="divCategoria">
+                <!-- Clase 8 -->
+                <a href="#">
+                  <img
+                    src="Imagenes/Categorias/shelfsCat.webp"
+                    alt="Estanterias"
+                  />
+                  <p>Shelfs</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid4">
+            <!-- Este es el grid -->
+            <div class="imagenFondo imagenFondo--Izq"></div>
+            <div class="imagenFondo imagenFondo--Centro"></div>
+            <div class="imagenFondo imagenFondo--Der"></div>
+          </div>
+        </article>
+        <!-- Aquí acaba el div principal -->
+        <div class="gridSeparaciones">
+          <div class="izqSeparaciones">
+            <p class="subtitulo negrita">New Arrivals</p>
+            <p class="negrita titulo">Dining Table 2018</p>
+            <a class="enlaces negrita" href="#">View Product</a>
+          </div>
+          <div class="centroSeparaciones">
+            <p class="subtitulo negrita">Only this week</p>
+            <p class="negrita titulo">Perfect fit <br> for your home</p>
+            <a class="enlaces negrita" href="#">Explore Now</a>
+          </div>
+          <div class=" derecSeparaciones">
+            <p class="subtitulo negrita">New Arrivals</p>
+            <p class="negrita titulo">Living furniture <br> you love</p>
+            <a class="enlaces negrita" href="#">View Product</a>
+          </div>
+        </div>
+        <article>
+          <h1 class="titulo negrita centrado">New Arrivals</h1>
+          <div>
+            <!-- Esto es el div principal -->
+            <div class="grid5">
+              <!-- Este div contiene las cinco primeras imagenes -->
+              <div>
+                <!-- Producto  1-->
+                <a href="#">
+                  <img class="imgArrivals"
+                    src="Imagenes/Arrivals/sillaArrivals1.webp"
+                    alt="silla 1"
+                  />
+                  <div>
+                    <!-- Aqui va la informacion del producto -->
+                    <img
+                      class="valoracion"
+                      src="Imagenes/Valoracion/val3.webp"
+                      alt="valoracion"
+                    />
+                    <p class="centrado negrita">
+                      Feece Badge of SportGraphic Hoodie
+                    </p>
+                    <p class="centrado amarillo">$49.99</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Fin del producto 1-->
+
+              <div>
+                <!-- Producto 2 -->
+                <a href="#">
+                  <img class="imgArrivals"
+                    src="Imagenes/Arrivals/sillaArrivals2.webp"
+                    alt="silla 2"
+                  />
+                  <div>
+                    <!-- Aqui va la informacion del producto -->
+                    <img
+                      class="valoracion"
+                      src="Imagenes/Valoracion/val3.webp"
+                      alt="valoracion"
+                    />
+                    <p class="centrado negrita">
+                      Indoor Herb Garden StarterKit-Organic
+                    </p>
+                    <p class="centrado amarillo">$55.99</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Fin del producto 2-->
+
+              <div>
+                <!-- Producto 3 -->
+                <a href="#">
+                  <img class="imgArrivals"
+                    src="Imagenes/Arrivals/sillaArrivals3.webp"
+                    alt="silla 3"
+                  />
+                  <div>
+                    <!-- Aqui va la informacion del producto -->
+                    <img
+                      class="valoracion"
+                      src="Imagenes/Valoracion/val3.webp"
+                      alt="valoracion"
+                    />
+                    <p class="centrado negrita">
+                      Keter Easy Grow 31.7 GallonRaised Garden Bed
+                    </p>
+                    <p class="centrado amarillo">$69.99</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Fin del producto 3-->
+
+              <div>
+                <!-- Producto 4 -->
+                <a href="#">
+                  <img class="imgArrivals"
+                    src="Imagenes/Arrivals/sillaArrivals4.webp"
+                    alt="silla4"
+                  />
+                  <div>
+                    <!-- Aqui va la informacion del producto -->
+                    <img
+                      class="valoracion"
+                      src="Imagenes/Valoracion/val3.webp"
+                      alt="valoracion"
+                    />
+                    <p class="centrado negrita">
+                      Sloggers Women'sWaterproof Rain and Garden
+                    </p>
+                    <div class="flex">
+                      <p class="amarillo">$49.99</p>
+                      <p class="precioTachado">$350.99</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Fin del producto 4-->
+
+              <div>
+                <!-- Producto 5 -->
+                <a href="#">
+                  <img class="imgArrivals"
+                    src="Imagenes/Arrivals/sillaArrivals5.webp"
+                    alt="silla5"
+                  />
+                  <div>
+                    <!-- Aqui va la informacion del producto -->
+                    <img
+                      class="valoracion"
+                      src="Imagenes/Valoracion/val3.webp"
+                      alt="valoracion"
+                    />
+                    <p class="centrado negrita">
+                      My Fairy Garden NatureCottage-Grow & Play Set
+                    </p>
+                    <p class="centrado amarillo">$39.99</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Fin del producto 5-->
+              <div class="imagenFondo imagenFondo--Arrivals">
+                <div class="arrivals">
+                  <p>Designer Furniture</p>
+                  <p class="titulo">
+                    Wooden Minimalistic <br />
+                    Chairs
+                  </p>
+                  <p>Sale up to 50% OFF</p>
+                </div>
+              </div>
+              <!-- Aqui se introducira la imagen grande con una clase -->
+            </div>
+          </div>
+        </article>
+        <!-- Final de New Arrivals -->
+        <article>
+          <h1 class="titulo centrado negrita">Our Blog</h1>
+          <div>
+            <!-- Contenedor -->
+            <div class="gridBlog">
+              <!-- grid -->
+              <div class="blog">
+                <!-- Blog 1 -->
+                <h2 class="tituloBlog">Performance</h2>
+                <h3 class="subBlog">
+                  An delighted offending curiosity my is dashwoods
+                </h3>
+                <p class="bodyBlog">
+                  Lorem ipsum folor sit amet, consecteur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+                <footer class="footerBlog flex">
+                  <p>28 Jun,2019 . by Administrator</p>
+                </footer>
+              </div>
+
+              <div class="blog">
+                <!-- Blog 2 -->
+                <h2 class="tituloBlog">Lifestyle</h2>
+                <h3 class="subBlog">
+                  Uneasy no settle whence nature narrow in afraid
+                </h3>
+                <p class="bodyBlog">
+                  Lorem ipsum folor sit amet, consecteur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+                <footer class="footerBlog flex">
+                  <p>28 Jun,2019 . by Administrator</p>
+                </footer>
+              </div>
+
+              <div class="blog">
+                <!-- Blog 3 -->
+                <h2 class="tituloBlog">Design</h2>
+                <h3 class="subBlog">
+                  To travelling ocassional at oh sympathize prosperous
+                </h3>
+                <p class="bodyBlog">
+                  Lorem ipsum folor sit amet, consecteur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+                <footer class="footerBlog flex">
+                  <p>28 Jun,2019 . by Administrator</p>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="flexLogos">
+            <!-- Grid -->
+            <div>
+              <img class="logos" src="Imagenes/Logos/logo1.webp" alt="col1" />
+            </div>
+            <div>
+              <img class="logos" src="Imagenes/Logos/logo2.webp" alt="col2" />
+            </div>
+            <div>
+              <img class="logos" src="Imagenes/Logos/logo3.webp" alt="col3" />
+            </div>
+            <div>
+              <img class="logos" src="Imagenes/Logos/logo4.webp" alt="col4" />
+            </div>
+            <div>
+              <img class="logos" src="Imagenes/Logos/logo5.webp" alt="col5" />
+            </div>
+          </div>
+          <!-- Fin Grid -->
+        </article>
+
+        <footer><!--Footer-->
+          <section><!--Footer superior-->
+              <div id="contenedor-footer">
+                  <div><!--Bloque 1: FIND IN FAST-->
+                      <h1>FIND IN FAST</h1>
+                      <nav>
+                          <ul class="ul-footer">
+                              <li>
+                                  <a href="#.html">Accesories</a>
+                              </li>
+                              <li>
+                                  <a href="#.html">Gaming</a>
+                              </li>
+                              <li>
+                                  <a href="#.html">Laptops & Computer</a>
+                              </li>
+                              <li>
+                                  <a href="#.html">Mac Computers</a>
+                              </li>
+                              <li>
+                                  <a href="#.html">PC Computers</a>
+                              </li>
+                              <li>
+                                  <a href="#.html">Ultrabooks</a>
+                              </li>
+                              <li>
+                                  <a href="#.html">EMI Payment</a>
+                              </li>
+                              <li>
+                                  <a href="#.html">Shipping Policy</a>
+                              </li>
+                          </ul>
+                      </nav>
+                  </div>
+                  <div><!--Bloque 2: MERCHANT CENTRAL-->
+                      <h1>MERCHANT CENTRAL</h1>
+                      <nav>
+                          <ul class="ul-footer">
+                              <li>
+                                  <a href="#.html">Merchant Sign In</a>
+                              </li>
+                              <li>
+                                  <a href="#.html">How Does It Work</a>
+                              </li>
+                              <li>
+                                  <a href="#.html">Pricing</a>
+                              </li>
+                              <li>
+                                  <a href="#.html">Fulfillment by ShopClues</a>
+                              </li>
+                              <li>
+                                  <a href="#.html">Merchant Tools</a>
+                              </li>
+                              <li>
+                                  <a href="#.html">Policies & Rules</a>
+                              </li>
+                              <li>
+                                  <a href="#.html">Testimonials</a>
+                              </li>
+                              <li>
+                                  <a href="#.html">Merchant Ratings</a>
+                              </li>
+                          </ul>
+                      </nav>
+                  </div>
+                  <div><!--Bloque 3: INFORMATION-->
+                      <h1>INFORMATION</h1>
+                      <nav>
+                          <ul class="ul-footer">
+                              <li>
+                                  <a href="#">About Us</a>
+                              </li>
+                              <li>
+                                  <a href="#">Contact Us</a>
+                              </li>
+                              <li>
+                                  <a href="#">All Collection</a>
+                              </li>
+                              <li>
+                                  <a href="#">Privacy Policy</a>
+                              </li>
+                              <li>
+                                  <a href="#">Terms & Condition</a>
+                              </li>
+                              <li>
+                                  <a href="#">Blog</a>
+                              </li>
+                              <li>
+                                  <a href="#">In the Press</a>
+                              </li>
+                              <li>
+                                  <a href="#">Awards</a>
+                              </li>
+                          </ul>
+                      </nav>
+                  </div>
+                  <div><!--Bloque 4: CONTACT US-->
+                      <article>
+                          <h1>CONTACT US</h1>
+                          <p class="links-footer">If you have any question, please contact us at <a class="verde cursor">support@example.com</a></p>
+                          <div>
+                              <section class="icono-textos-footer">
+                                  <img class="icono" src="Imagenes/IconosFooter/iconoLoc.png" alt="Ubicacion"><!--Icono-->
+                                  <p class="links-footer">123 Sky Tower, West 21th Street, Suite, NY</p><!--Texto gris-->
+                              </section>
+                          </div>
+                          <div>
+                              <section class="icono-textos-footer">
+                                  <img class="icono" src="Imagenes/IconosFooter/iconoTelefono.png" alt="Telefono"><!--Icono-->
+                                  <div>
+                                      <p class="links-footer">+844 123 456 789</p>
+                                      <p class="links-footer">+844 123 456 789</p>
+                                  </div>
+                              </section>
+  
+                          </div>
+                      </article>
+                  </div>
+              </div>
+          </section>
+  
+          <section id="section-newsletter"><!--Newsletter-->
+              <div class="flexNewsletter">
+                  <div id="icono-textos-newsletter">
+                      <img class="icono" src="Imagenes/IconosFooter/iconoCorreo.png" alt="Correo"><!--Icono-->
+                      <h1>SIGN UP FOR NEWSLETTER</h1><!--Texto-->
+                  </div>
+                  <div>
+                      <p class="gris bold">Subscribe to the weekly newsletter for all the latest updates</p><!--Texto-->
+                  </div>
+                  <div>
+                      <form id="form" action="index.html" method="post">
+                          <input id="form-newsletter" type="text" name="email" placeholder="Your Email..." value="">
+                          <input id="boton-newsletter" style="color: gray;" type="submit" value="Subscribe">
+                      </form>
+                  </div>
+              </div>
+          </section>
+          
+          <section><!--Navegación-->
+              <div id="nav-footer">
+                  <nav><!--Categorías-->
+                      <ul>
+                          <li>
+                              <a href="#">HOME</a>
+                          </li>
+                          <li>
+                              <a href="#">ABOUT</a>
+                          </li>
+                          <li>
+                              <a href="#">SHOP</a>
+                          </li>
+                          <li>
+                              <a href="#">ELECTRONICS</a>
+                          </li>
+                          <li>
+                              <a href="#">BLOG</a>
+                          </li>
+                          <li>
+                              <a href="#">CONTACT</a>
+                          </li>
+                          <li>
+                              <a href="#">PAGES</a>
+                          </li>
+                      </ul>
+                  </nav>
+                  <p id="te">*Price Promotions - Due to manufacturer restrictions, select new release and other specified products are excluded from price promotions.</p>
+              </div>
+          </section>
+          <section id="footer-inferior"><!--Footer inferior-->
+              <div><!--Copyright-->
+                  <p class="gris bold">Copyright 2020 <a href="index.html">ekommart. </a>All Rights Reserved.</p>
+              </div>
+              <div class="footerRRSS"><!--RRSS-->
+                  <img class="icono" src="Imagenes/IconosFooter/iconoFacebook.png" alt="Facebook">
+                  <img class="icono" src="Imagenes/IconosFooter/iconoTwitter.png" alt="Twitter">
+                  <img class="icono" src="Imagenes/IconosFooter/iconoInstagram.png" alt="Twitter">
+                  <img class="icono" src="Imagenes/IconosFooter/iconoLinkedin.png" alt="Twitter">
+              </div>
+              <div class="tarjetas"><!--Payments Cards-->
+                <img class="icono" src="Imagenes/IconosFooter/Visa.png" alt="Tarjeta Visa"/>
+                <img class="icono" src="Imagenes/IconosFooter/MasterCard.png" alt="Tarjeta MasterCard"/>
+                <img class="icono" src="Imagenes/IconosFooter/Paypal.png" alt="Tarjeta PayPal"/>
+                <img class="icono" src="Imagenes/IconosFooter/AmericanExpress.png" alt="Tarjeta AmericanExpress"/>
+                <img class="icono" src="Imagenes/IconosFooter/Bitpay.png" alt="Tarjeta Bitpay"/>
+                <img class="icono" src="Imagenes/IconosFooter/Laser.png" alt="Tarjeta Laser"/>
+                <img class="icono" src="Imagenes/IconosFooter/Maestro.png" alt="Tarjeta Maestro"/>
+                <img class="icono" src="Imagenes/IconosFooter/Payone.png" alt="Tarjeta Payone"/>
+                <img class="icono" src="Imagenes/IconosFooter/Solo.png"alt="Tarjeta Solo"/>
+              </div>
+          </section>
+          <section class="firma">
+            <svg height="130" width="500">
+              <text x="50%" y="50%" fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">JL</text>
+              Sorry, your browser does not support inline SVG.
+            </svg>
+        </section>
+      </footer>
+  </body>
+</html>

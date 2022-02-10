@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/indiceStyle.css" />
+    <link rel="stylesheet" href="../css/normalize.css">
+    <title>Galeria de imagenes</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenedorHeader">
+        <div class="gridHeader">
+          <!-- Grid -->
+
+          <div style="margin: auto">
+            <!-- CSS inline -->
+            <p>
+              Welcome to our online store! Join Free or
+              <a href="#" class="enlaceHeader">Sign in</a>
+            </p>
+          </div>
+          <div style="margin: auto">
+            <!-- Grid -->
+            <select name="idioma" id="idioma">
+              <option value="España">ESP</option>
+              <option value="USA">USA</option>
+              <option value="Alemania">ALE</option>
+            </select>
+            <select name="moneda" id="moneda">
+              <option value="euro">EU(€)</option>
+              <option value="dolar">USD($)</option>
+              <option value="rublo">RUB(₽)</option>
+            </select>
+          </div>
+        </div>
+        <!-- Fin Grid -->
+      </div>
+
+      <div class="gridTitulo">
+        <!-- Grid -->
+        <div>
+          <img
+            class="logoMarca"
+            src="../Imagenes/Logo/logo2.png"
+            alt="ekommart"
+          />
+        </div>
+        <div>
+          <form action="#">
+            <div class="busqueda">
+              <img
+                class="icono"
+                src="../Imagenes/user/iconoBusqueda.png"
+                alt="busqueda"
+              />
+              <input
+                class="placeholder"
+                type="search"
+                placeholder="Search among 100,000 products"
+              />
+              <button class="botonBusqueda" type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="gridIconos">
+          <div>
+            <button class="icono">
+              <img src="../Imagenes/user/user.png" alt="usuario" />
+            </button>
+          </div>
+          <div>
+            <button class="icono">
+              <img src="../Imagenes/user/favoritos.png" alt="favoritos" />
+            </button>
+          </div>
+          <div>
+            <button class="icono">
+              <img src="../Imagenes/user/compra.png" alt="compra" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Grid -->
+
+      <nav>
+        <div class="gridNavegacion">
+          <div class="navegacion">
+            <a class="negrita" href="../index.html">Pagina principal</a>
+          </div>
+          <div class="navegacion">
+            <a class="negrita" href="galImg.html">Galeria de imagenes</a>
+          </div>
+          <div class="navegacion">
+            <a class="negrita" href="Contacto.html">Contacto</a>
+          </div>
+          <div class="navegacion">
+            <a class="negrita" href="mapaWeb.html">Mapa de la web</a>
+          </div>
+          <div class="navegacion">
+            <a class="negrita" href="listNot.html"
+              >Listado de noticias&frasl;articulos</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="gridGaleria">
+          <a href="#">
+            <img class="imgGaleria" src="../Imagenes/Galeria/Almohada.jpg" alt="Categoria 1" />
+            <p class="textoGaleria negrita">Almohadas</p>
+          </a>
+          <a href="#">
+            <img class="imgGaleria" src="../Imagenes/Galeria/lmapara.jpg" alt="Categoria 2" />
+            <p class="textoGaleria negrita">Lamparas</p>
+          </a>
+          <a href="#">
+            <img class="imgGaleria" src="../Imagenes/Galeria/mesa.jpg" alt="Categoria 3" />
+          <p class="textoGaleria negrita">Mesas de comedor</p>
+          </a>
+          <a href="#">
+            <img class="imgGaleria" src="../Imagenes/Galeria/silla.jpg" alt="Categoria 4" />
+          <p  class="textoGaleria negrita">Sillas Contemporaneas</p>
+          </a>
+
+          <div class="sliderCategorias">
+            <a href="#">
+              <img name="slider" class="sliderCategorias" />
+              <p class="textoGaleria negrita">Ideas de diseño de interior</p>
+            </a>
+          </div>
+        
+        
+          <a href="#">
+            <img class="imgGaleria" src="../Imagenes/Galeria/sofa.jpg" alt="Categoria 5" />
+          <p class="textoGaleria negrita">Sofas</p>
+          </a>
+          <a href="#">
+            <img class="imgGaleria" src="../Imagenes/Galeria/silla2.jpg" alt="Categoria 6" />
+          <p class="textoGaleria negrita">Sillas de oficina</p>
+          </a>
+          <a href="#">
+            <img class="imgGaleria" src="../Imagenes/Galeria/mesa2.jpg" alt="Categoria 7" />
+          <p class="textoGaleria negrita">Mesas de terraza</p>
+          </a>
+          <a href="#">
+            <img class="imgGaleria" src="../Imagenes/Galeria/tele.jpg" alt="Categoria 8" />
+          <p class="textoGaleria negrita">Mesas para la television</p>
+          </a>
+      </div>
+
+      <script>
+        window.addEventListener("load", function () {
+          console.log("Ha cargado");
+
+          document.slider.src = "../Imagenes/Carrusel/Diseño1.jpg";
+
+          let imagenes = [];
+
+          imagenes[0] = "../Imagenes/Carrusel/Diseño2.jpg";
+          imagenes[1] = "../Imagenes/Carrusel/Diseño3.jpg";
+          imagenes[2] = "../Imagenes/Carrusel/Diseño4.jpg";
+          imagenes[3] = "../Imagenes/Carrusel/Diseño5.jpg";
+
+          let indiceImagenes = 0;
+
+          function cambiarImagen() {
+            document.slider.src = imagenes[indiceImagenes];
+
+            if (indiceImagenes < 3) {
+              indiceImagenes++;
+            } else {
+              indiceImagenes = 0;
+            }
+          }
+          setInterval(cambiarImagen, 5000);
+        });
+      </script>
+    </main>
+
+    <footer>
+      <!--Footer-->
+      <section>
+        <!--Footer superior-->
+        <div id="contenedor-footer">
+          <div>
+            <!--Bloque 1: FIND IN FAST-->
+            <h1>FIND IN FAST</h1>
+            <nav>
+              <ul class="ul-footer">
+                <li>
+                  <a href="#.html">Accesories</a>
+                </li>
+                <li>
+                  <a href="#.html">Gaming</a>
+                </li>
+                <li>
+                  <a href="#.html">Laptops & Computer</a>
+                </li>
+                <li>
+                  <a href="#.html">Mac Computers</a>
+                </li>
+                <li>
+                  <a href="#.html">PC Computers</a>
+                </li>
+                <li>
+                  <a href="#.html">Ultrabooks</a>
+                </li>
+                <li>
+                  <a href="#.html">EMI Payment</a>
+                </li>
+                <li>
+                  <a href="#.html">Shipping Policy</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <!--Bloque 2: MERCHANT CENTRAL-->
+            <h1>MERCHANT CENTRAL</h1>
+            <nav>
+              <ul class="ul-footer">
+                <li>
+                  <a href="#.html">Merchant Sign In</a>
+                </li>
+                <li>
+                  <a href="#.html">How Does It Work</a>
+                </li>
+                <li>
+                  <a href="#.html">Pricing</a>
+                </li>
+                <li>
+                  <a href="#.html">Fulfillment by ShopClues</a>
+                </li>
+                <li>
+                  <a href="#.html">Merchant Tools</a>
+                </li>
+                <li>
+                  <a href="#.html">Policies & Rules</a>
+                </li>
+                <li>
+                  <a href="#.html">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#.html">Merchant Ratings</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <!--Bloque 3: INFORMATION-->
+            <h1>INFORMATION</h1>
+            <nav>
+              <ul class="ul-footer">
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#">All Collection</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Terms & Condition</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">In the Press</a>
+                </li>
+                <li>
+                  <a href="#">Awards</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <!--Bloque 4: CONTACT US-->
+            <article>
+              <h1>CONTACT US</h1>
+              <p class="links-footer">
+                If you have any question, please contact us at
+                <a class="verde cursor">support@example.com</a>
+              </p>
+              <div>
+                <section class="icono-textos-footer">
+                  <img
+                    class="icono"
+                    src="../Imagenes/IconosFooter/iconoLoc.png"
+                    alt="Ubicacion"
+                  /><!--Icono-->
+                  <p class="links-footer">
+                    123 Sky Tower, West 21th Street, Suite, NY
+                  </p>
+                  <!--Texto gris-->
+                </section>
+              </div>
+              <div>
+                <section class="icono-textos-footer">
+                  <img
+                    class="icono"
+                    src="../Imagenes/IconosFooter/iconoTelefono.png"
+                    alt="Telefono"
+                  /><!--Icono-->
+                  <div>
+                    <p class="links-footer">+844 123 456 789</p>
+                    <p class="links-footer">+844 123 456 789</p>
+                  </div>
+                </section>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-newsletter">
+        <!--Newsletter-->
+        <div class="flexNewsletter">
+          <div id="icono-textos-newsletter">
+            <img
+              class="icono"
+              src="../Imagenes/IconosFooter/iconoCorreo.png"
+              alt="Correo"
+            /><!--Icono-->
+            <h1>SIGN UP FOR NEWSLETTER</h1>
+            <!--Texto-->
+          </div>
+          <div>
+            <p class="gris bold">
+              Subscribe to the weekly newsletter for all the latest updates
+            </p>
+            <!--Texto-->
+          </div>
+          <div>
+            <form id="form" action="index.html" method="post">
+              <input
+                id="form-newsletter"
+                type="text"
+                name="email"
+                placeholder="Your Email..."
+                value=""
+              />
+              <input
+                id="boton-newsletter"
+                style="color: gray"
+                type="submit"
+                value="Subscribe"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <!--Navegación-->
+        <div id="nav-footer">
+          <nav>
+            <!--Categorías-->
+            <ul>
+              <li>
+                <a href="#">HOME</a>
+              </li>
+              <li>
+                <a href="#">ABOUT</a>
+              </li>
+              <li>
+                <a href="#">SHOP</a>
+              </li>
+              <li>
+                <a href="#">ELECTRONICS</a>
+              </li>
+              <li>
+                <a href="#">BLOG</a>
+              </li>
+              <li>
+                <a href="#">CONTACT</a>
+              </li>
+              <li>
+                <a href="#">PAGES</a>
+              </li>
+            </ul>
+          </nav>
+          <p id="te">
+            *Price Promotions - Due to manufacturer restrictions, select new
+            release and other specified products are excluded from price
+            promotions.
+          </p>
+        </div>
+      </section>
+
+      <section id="footer-inferior">
+        <!--Footer inferior-->
+        <div>
+          <!--Copyright-->
+          <p class="gris bold">
+            Copyright 2020 <a href="index.html">ekommart. </a>All Rights
+            Reserved.
+          </p>
+        </div>
+        <div class="footerRRSS">
+          <!--RRSS-->
+          <img
+            class="icono"
+            src="../Imagenes/IconosFooter/iconoFacebook.png"
+            alt="Facebook"
+          />
+          <img
+            class="icono"
+            src="../Imagenes/IconosFooter/iconoTwitter.png"
+            alt="Twitter"
+          />
+          <img
+            class="icono"
+            src="../Imagenes/IconosFooter/iconoInstagram.png"
+            alt="Twitter"
+          />
+          <img
+            class="icono"
+            src="../Imagenes/IconosFooter/iconoLinkedin.png"
+            alt="Twitter"
+          />
+        </div>
+        <div class="tarjetas">
+          <!--Payments Cards-->
+          <img
+            class="icono"
+            src="../Imagenes/IconosFooter/Visa.png"
+            alt="Tarjeta Visa"
+          />
+          <img
+            class="icono"
+            src="../Imagenes/IconosFooter/MasterCard.png"
+            alt="Tarjeta MasterCard"
+          />
+          <img
+            class="icono"
+            src="../Imagenes/IconosFooter/Paypal.png"
+            alt="Tarjeta PayPal"
+          />
+          <img
+            class="icono"
+            src="../Imagenes/IconosFooter/AmericanExpress.png"
+            alt="Tarjeta AmericanExpress"
+          />
+          <img
+            class="icono"
+            src="../Imagenes/IconosFooter/Bitpay.png"
+            alt="Tarjeta Bitpay"
+          />
+          <img
+            class="icono"
+            src="../Imagenes/IconosFooter/Laser.png"
+            alt="Tarjeta Laser"
+          />
+          <img
+            class="icono"
+            src="../Imagenes/IconosFooter/Maestro.png"
+            alt="Tarjeta Maestro"
+          />
+          <img
+            class="icono"
+            src="../Imagenes/IconosFooter/Payone.png"
+            alt="Tarjeta Payone"
+          />
+          <img
+            class="icono"
+            src="../Imagenes/IconosFooter/Solo.png"
+            alt="Tarjeta Solo"
+          />
+        </div>
+      </section>
+      <section class="firma">
+        <svg height="130" width="500">
+          <text x="50%" y="50%" fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">JL</text>
+          Sorry, your browser does not support inline SVG.
+        </svg>
+    </section>
+    </footer>
+  </body>
+</html>
